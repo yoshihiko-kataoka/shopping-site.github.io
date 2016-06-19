@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>APPLE BERRY made with B</title>
+    <meta name="description" content="20代から30代の女性をターケッドとした、雑貨の販売サイトです">
+    <meta name="keywords" content="Web, 雑貨, 20代, 30代, 女性">
+　　<meta name="viewport" content="width=device-width" initial-scale=1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+
+
+	#submenu {
+		margin-top:15px;
+		margin-bottom:15px;
+	}	
+
+	h3,.koumoku {
+		background:#887F69;
+		line-height:3em;
+		margin-bottom:15px;
+	}
+	.koumoku.slide {
+		margin-bottom:0;
+	}
+
+	h3,.koumoku,.koumo {
+		position:relative;
+	}
+	.rt {
+		background:url('./images/top/next_icon_gray.png') no-repeat;
+		position:absolute;
+		right:5%;
+		top:35%;
+		cursor:pointer;
+		display:block;
+	}
+	.rt:hover {
+		background:url('./images/top/next_icon.png') no-repeat;
+	}
+
+	.dw {
+		background:url('./images/top/down_icon.png') no-repeat;
+		position:absolute;
+		width:20px;
+		right:3%;
+		top:35%;
+		cursor:pointer;
+		display:block;
+	}
+	.w_box {
+		background:#fff;
+		border-bottom:1px solid #F9F8F6;
+		border-left:1px solid #F9F8F6;
+		border-right:1px solid #F9F8F6;
+		line-height:3em;
+	}
+	.w_box:last-child {
+		margin-bottom:15px;
+	}
+	#menu {
+		cursor:pointer;
+	}
+	#hamburger {
+		display:none;
+	}
+
+	figure, .btn {
+		text-align:center;
+	}
+
+    #pan {
+        background:#e8e4da;
+        text-align:left;
+        padding:10px;
+        color:#887f69;
+    }
+    .text-left {
+        float:left;
+
+    }
+    .products-right {
+        float: right;
+        
+    }
+    .title {
+        overflow: hidden;
+        margin-bottom: 30px;
+        padding-bottom:30px;
+        border-bottom:1px solid #e8e4da;
+    }
+    #display_img {
+    	float:left;
+    	width:440px;
+    }
+    #display_img img {
+		max-width:100%;
+		height:auto;
+		width:430px;
+		height:430px;
+	}
+	#wrap {
+		float:left;
+		width:180px;
+		margin-left:10px;
+	}	
+    #list_img {
+	    display:flex;
+    	flex-flow:wrap;
+    	justify-content:space-between;
+
+    }
+    #list_img li {
+		list-style: none;
+
+	}
+    #list_img img {
+		width: 85px;
+		height:85px;
+		cursor: pointer;
+	}
+	.clearfix {
+		padding-bottom:45px;
+		margin-bottom:20px;
+		border-bottom:1px solid #e8e4da;
+	}
+	.clearfix::after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	
+	
+	table#main,table#tdetail {
+		border:1px solid #e8e4da;
+		border-collapse: collapse;
+		width:100%;
+		margin-bottom: 30px;
+	}
+	table#main th, table#main td {
+		border:1px solid #e8e4da;
+		width:33%;
+	}
+	table#tdetail th, table#tdetail td {
+		border:1px solid #e8e4da;
+	}
+	.gray {
+		background:#f9f9f5;
+	}
+	.left {
+		float:left;
+	}
+	.center {
+		padding-left:100px;
+		font-size:25px;
+	}
+	.left,.center {
+		border-top:1px solid #e8e4da;
+		border-bottom:1px solid #e8e4da;
+		height:55px;
+		padding-top:15px;
+	}
+	.right {
+		float:right;
+	}
+	#price img, #table-image img {
+		width:225px;
+		height:55px;
+	}
+	#price {
+		overflow:hidden;
+	}
+	#red {
+		color:#f00;
+	}
+	table#tguide {
+		width:100%;
+	}
+	table#tguide th, table#tguide td {
+		border-top:1px solid #e8e4da;
+		border-bottom:1px solid #e8e4da;
+		height:5em;
+		line-height:5em;
+
+	}
+	table#tguide th {
+		font-size:20px;
+		text-align:left;
+		width:20%;
+	}
+	table#tguide td {
+		font-size:25px;
+		width:40%;
+	}
+	#table-image {
+		padding-top:40px;
+	}
+	#description {
+		text-align:left;
+		margin-bottom:20px;
+	}
+
+    </style>
+  </head>
+  
+  <body>
+    <div id="container">
+    <header>
+	<img src="./images/top/logo.png" alt="APPLE BERRY" id="logo">
+
+      	<div id="mainmenu">
+	  <ul>
+		<li><a href="#"><img src="images/top/menu_login.png"></a></li>
+		<li><a href="#"><img src="images/top/menu_cart.png"></a></li>
+		<li><a href="#"><img src="images/top/menu_mypage.png"></a></li>
+		<li><a href="#"><img src="images/top/menu_guide.png"></a></li>
+		<li><img src="./images/top/facebook.png" alt="facebook"></li>
+		<li><img src="./images/top/insta.png" alt="insta"></li>
+	  </ul>
+	</div>
+
+    </header><!--contents-->
+  <div id="contents" class="clearfix">
+    <main>
+        <div id="pan"><img src="./images/products/home_icon.png"><a href="./index.html">HOME</a> &gt;<a href="#">カテゴリー名</a>&gt;商品名</div>
+      <section id="skills">
+        <div class="title">
+        <h2 class="text-left">Product</h2>
+        <p class="products-right">商品番号</p>
+        </div>
+        <div class="clearfix">
+		  	<div id="display_img">
+				<img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_01.jpg" alt="">
+			</div>
+			<div id="wrap">
+			<ul id="list_img">
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_01.jpg" alt=""></li>
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_02.jpg" alt=""></li>
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_03.jpg" alt=""></li>
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_01.jpg" alt=""></li>
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_02.jpg" alt=""></li>
+			  <li><img src="https://techacademy.s3.amazonaws.com/bootcamp/webdesign/shopping-site/download/products_img/pro_img_03.jpg" alt=""></li>
+			</ul>
+			</div>
+        </div>
+        <div id="detail">
+		<p style="text-align:left; font-size:20px;">color/size</p>        
+        <table id="main">
+        <tr><th class="gray"></th><th class="gray">カラー１</th><th class="gray">カラー１</th></tr>	
+        <tr><th class="gray">サイズ</th><td>□</td><td>□</td></tr>	        	
+       </table>
+       <!--<section id="price">
+        <p style="text-align:left; font-size:20px;" class="left">price</p>
+        <p class="left center"><span id="red">￥10,000</span>（税込）</p>
+        <p class="right"><img src="./images/products/add_to_cart.png"></p>
+        </section>
+        <section id="quantity" style="overflow:hidden;">
+        <p style="text-align:left; font-size:20px;" class="left center">Quantity</p>
+        <p class="left center"><input type="text" name="Quantity" value=""></p>
+        </section>-->
+        <table id="tguide">
+        <tr><th>price</th><td><span id="red" style="font-size:25px;">￥10,000</span>（税込）</td><td id="table-image" style="border:none;"><img src="./images/products/add_to_cart.png"></td></tr>	
+        <tr><th>Quantity</th><td><input type="text" name="Quantity" value="" style="width:150px; height:50px;"></td><td style="border-top:none;"></td></tr>
+        </table>
+        <section id="description">
+        <h2>商品説明</h2>
+        <h3 class="wow fadeInUp">説明タイトル説明タイトル説明タイトル説明タイトル説明タイトル</h3>
+        <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        <p>説明テキスト説明テキスト説明テキスト説明テキスト<br>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        <p>説明テキスト説明テキスト説明テキスト説明テキスト<br>説明テキスト説明テキスト説明テキスト説明<br>
+        テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+        </section>	
+        <table id="tdetail">
+        <tr><th class="gray">カラー</th><td>説明文が入ります説明文が入ります説明文が入ります</td></tr>	
+        <tr><th class="gray">サイズ</th><td>説明文が文が入ります説明文が入ります説明文が入ります</td></tr>	        	
+       </table>
+        </div>
+        <h2>Recently Viewed Products</h2>
+       <div class="container">
+          <div class="skill-box">
+	　　<figure>
+	    <img src="./images/top/item_01.jpg" alt="アイテム１" class="mt">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+          <div class="skill-box">
+	　　<figure>
+	    <img src="./images/top/item_02.jpg" alt="アイテム２" class="mt">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+          <div class="skill-box">
+	    <figure>
+	    <img src="./images/top/item_03.jpg" alt="アイテム３">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+          <div class="skill-box">
+	    <figure>
+	    <img src="./images/top/item_04.jpg" alt="アイテム４">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+          <div class="skill-box">
+	    <figure>
+	    <img src="./images/top/item_05.jpg" alt="アイテム５">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+          <div class="skill-box">
+	    <figure>
+	    <img src="./images/top/item_06.jpg" alt="アイテム６">
+            <figcaption>商品名が入ります商品名が入ります商品名が入ります。</figcaption>
+	    </figure>
+	    <p>￥10,000(税込み)</p>
+          </div>
+        </div>
+      </section>
+      <section id="guide">
+        <h2 class="text-center">SHOPPING GUIDE</h2>
+		<div class="guide_box">
+	   		<h4>お届けについて</h4>
+    		<ul class="gb">
+			<li><img src="images/top/otodoke_banner.png" alt="送料無料"></li>
+			<li>■○○運輸
+			　　　<ul>
+				<li>送料 ￥900</li>
+			      </ul>
+			</li>		
+			<li>■ゆうバスケット
+			　　　<ul>
+				<li>ポスト投函となります。日時指定不可</li>
+			      </ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="guide_box">
+	   <h4>決済について</h4>
+    		<ul class="gb">
+			<li>■カード決済
+			　　　<ul>
+				<li><img src="images/top/cards.png" alt="VISA,MASTER CARD,JCB,AMEX,PayPal" width="250" height="30"></li>
+			      </ul>
+			</li>		
+			<li>■代金引換
+			　　　<ul>
+				<li>代引き手数料が別途かかります</li>
+			      </ul>
+			</li>
+			<li>■銀行振込
+			　　　<ul>
+				<li>お振込手数料お客様ご負担。</li>
+				<li>ご入金後の発送となります。</li>
+			      </ul>
+			</li>
+		</ul>
+	</div>
+      </section>
+    </main>
+    <div id="sub">
+	<h2><img src="images/top/itemserch.png"></h2>	
+	<span id="s-box" style="background:#EEEEEE; margin-bottom:15px;"><input type="search" name="search" placeholder="search" style="background:#EEEEEE;"><img src="./images/top/search_icon.png" style="margin-bottom:-12px; padding:7px;"></span>
+	<div id="submenu">
+	  <ul>
+            <li class="koumoku"><img src="./images/top/page_link.png" alt="ページリンク"><span class="rt">&nbsp;</span></li>
+	    <li><div class="koumoku slide" id="menu"><img src="./images/top/categories.png" alt="カテゴリー"><span class="dw">&nbsp;</span></div>
+		<ul id="hamburger">
+		  <li class="w_box koumo">カテゴリー名<span class="rt">&nbsp;</span></li>
+		  <li class="w_box koumo">カテゴリー名<span class="rt">&nbsp;</span></li>
+		  <li class="w_box koumo">カテゴリー名<span class="rt">&nbsp;</span></li>
+		  <li class="w_box koumo">カテゴリー名<span class="rt">&nbsp;</span></li>
+	        </ul>
+	   </li>
+	  </ul>
+	</div><!-- #submenu -->
+        <section class="about">
+	  <h3><img src="./images/top/about.png" alt="このお店について"><span class="rt">&nbsp;</span></h3>
+	  <figure>
+		<img src="./images/top/about_img.jpg" alt="お店の写真">
+		<figcaption>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</figcaption>
+	  </figure>
+		<div class="btn"><a href="#"><img src="./images/top/more_btn.png" alt="より詳細はこちら"></a></div>
+	</section><!-- #about -->
+        <section class="about">
+	  <h3><img src="./images/top/shop_info.png" alt="このお店について"><span class="rt">&nbsp;</span></h3>
+	  <figure>
+		<img src="./images/top/shopinfo_img.jpg" alt="お店の写真2">
+		<figcaption>お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明お店の説明</figcaption>
+	  </figure>
+		<div class="btn"><a href="#"><img src="./images/top/more_btn.png" alt="より詳細はこちら"></a></div>
+	</section><!-- #about -->
+    </div><!-- #sub -->
+  </div><!-- #contents -->
+	<div id="back-to-top"><a href="#"><img src="./images/top/pagetop.png" class="rgt"></a></div>
+<!--footer-->
+    <footer>
+	  <ul id="f_menu">
+		<li>特定商取引における表記</li>
+		<li>プライバシーポリシー</li>
+		<li>マイページ</li>
+	  </ul>
+	  <small class="text-center abel uppercase">&copy; APPLE BERRY, All Rights Reserved.</small></footer>
+ </div><!-- #container -->
+	<script src="./js/jquery-3.0.0.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/wow.min.js"></script>
+	<script>
+    new WOW().init();
+  </script>
+  
+	<script>
+		$(document).ready(function(){
+		  $("#menu").click(function(){
+		    $("#hamburger").slideToggle();
+		  });
+		  
+		  $('#list_img img').click(function() {
+			   var img_src=$(this).attr('src');
+			   $('#display_img img').attr('src',img_src);
+			 });
+			 
+		  $('#back-to-top a').click(function(){
+			$('body,html').animate({
+				scrollTop:0
+			},1000);
+			    return false;
+		  });
+		});
+	</script>
+  </body>
+</html>
